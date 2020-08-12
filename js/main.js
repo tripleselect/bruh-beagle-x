@@ -1,0 +1,15 @@
+import "./bruhs.js"; // setup bruh count
+import { getBeg, getBark } from "./molly.js";
+const target = document.getElementById("click");
+target.style.backgroundImage = `url("${getBeg()}")`;
+const aud = new Audio("assets/bruh.mp3");
+target.addEventListener("click", () => {
+    aud.play();
+    aud.currentTime = 0;
+    bruhs++;
+    target.style.backgroundImage = `url("${getBark()}")`;
+    aud.addEventListener("ended", () => {
+        target.style.backgroundImage = `url("${getBeg()}")`;
+    });
+});
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibWFpbi5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uL3NyYy9tYWluLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLE9BQU8sWUFBWSxDQUFDLENBQUMsbUJBQW1CO0FBQ3hDLE9BQU8sRUFBRSxNQUFNLEVBQUUsT0FBTyxFQUFFLE1BQU0sWUFBWSxDQUFDO0FBRTdDLE1BQU0sTUFBTSxHQUFHLFFBQVEsQ0FBQyxjQUFjLENBQUMsT0FBTyxDQUF5QixDQUFDO0FBQ3hFLE1BQU0sQ0FBQyxLQUFLLENBQUMsZUFBZSxHQUFHLFFBQVEsTUFBTSxFQUFFLElBQUksQ0FBQztBQUNwRCxNQUFNLEdBQUcsR0FBRyxJQUFJLEtBQUssQ0FBQyxpQkFBaUIsQ0FBQyxDQUFDO0FBQ3pDLE1BQU0sQ0FBQyxnQkFBZ0IsQ0FBQyxPQUFPLEVBQUUsR0FBRyxFQUFFO0lBQ3BDLEdBQUcsQ0FBQyxJQUFJLEVBQUUsQ0FBQztJQUNYLEdBQUcsQ0FBQyxXQUFXLEdBQUcsQ0FBQyxDQUFDO0lBQ3BCLEtBQUssRUFBRSxDQUFDO0lBQ1IsTUFBTSxDQUFDLEtBQUssQ0FBQyxlQUFlLEdBQUcsUUFBUSxPQUFPLEVBQUUsSUFBSSxDQUFDO0lBQ3JELEdBQUcsQ0FBQyxnQkFBZ0IsQ0FBQyxPQUFPLEVBQUUsR0FBRyxFQUFFO1FBQ2pDLE1BQU0sQ0FBQyxLQUFLLENBQUMsZUFBZSxHQUFHLFFBQVEsTUFBTSxFQUFFLElBQUksQ0FBQztJQUN0RCxDQUFDLENBQUMsQ0FBQztBQUNMLENBQUMsQ0FBQyxDQUFDIn0=

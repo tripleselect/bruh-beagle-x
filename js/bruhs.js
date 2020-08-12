@@ -1,0 +1,14 @@
+const count = document.getElementById("click")?.querySelector('legend');
+Object.defineProperty(globalThis, "bruhs", {
+    get() {
+        return BigInt(localStorage.getItem("bruhs"));
+    },
+    set(bigint) {
+        localStorage.setItem("bruhs", bigint);
+        count.innerText = bruhs.toString();
+    },
+});
+if (!localStorage.getItem('bruhs'))
+    bruhs = 0n; // set inital bruh count
+bruhs = bruhs; // update counter
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiYnJ1aHMuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi9zcmMvYnJ1aHMudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBSUEsTUFBTSxLQUFLLEdBQUcsUUFBUSxDQUFDLGNBQWMsQ0FBQyxPQUFPLENBQUMsRUFBRSxhQUFhLENBQUMsUUFBUSxDQUF1QixDQUFDO0FBRTlGLE1BQU0sQ0FBQyxjQUFjLENBQUMsVUFBVSxFQUFFLE9BQU8sRUFBRTtJQUN6QyxHQUFHO1FBQ0QsT0FBTyxNQUFNLENBQUMsWUFBWSxDQUFDLE9BQU8sQ0FBQyxPQUFPLENBQUMsQ0FBQyxDQUFDO0lBQy9DLENBQUM7SUFDRCxHQUFHLENBQUUsTUFBTTtRQUNULFlBQVksQ0FBQyxPQUFPLENBQUMsT0FBTyxFQUFFLE1BQU0sQ0FBQyxDQUFDO1FBQ3RDLEtBQUssQ0FBQyxTQUFTLEdBQUcsS0FBSyxDQUFDLFFBQVEsRUFBRSxDQUFDO0lBQ3JDLENBQUM7Q0FDRixDQUFDLENBQUM7QUFFSCxJQUFJLENBQUMsWUFBWSxDQUFDLE9BQU8sQ0FBQyxPQUFPLENBQUM7SUFBRSxLQUFLLEdBQUcsRUFBRSxDQUFBLENBQUMsd0JBQXdCO0FBRXZFLEtBQUssR0FBRyxLQUFLLENBQUEsQ0FBQyxpQkFBaUIifQ==

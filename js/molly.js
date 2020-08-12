@@ -1,0 +1,21 @@
+const random = (arr) => arr[Math.floor(Math.random() * arr.length)];
+const beg = [
+    "assets/beg/nick.png",
+    "assets/beg/swear.png",
+    "assets/beg/bruh.webp",
+];
+export const getBeg = () => random(beg);
+const bark = [
+    "assets/beg/nick.png",
+    "assets/beg/swear.png",
+    "assets/beg/bruh.webp",
+];
+export const getBark = () => random(bark);
+document.head.append(...beg.concat(bark).map(url => {
+    const link = document.createElement('link');
+    link.rel = 'preload';
+    link.as = 'image';
+    link.href = url;
+    return link;
+}));
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibW9sbHkuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi9zcmMvbW9sbHkudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsTUFBTSxNQUFNLEdBQUksQ0FBTyxHQUFXLEVBQVEsRUFBRSxDQUFDLEdBQUcsQ0FBQyxJQUFJLENBQUMsS0FBSyxDQUFDLElBQUksQ0FBQyxNQUFNLEVBQUUsR0FBRyxHQUFHLENBQUMsTUFBTSxDQUFDLENBQUMsQ0FBQTtBQUN4RixNQUFNLEdBQUcsR0FBRztJQUNWLHFCQUFxQjtJQUNyQixzQkFBc0I7SUFDdEIsc0JBQXNCO0NBQ3ZCLENBQUM7QUFDRixNQUFNLENBQUMsTUFBTSxNQUFNLEdBQUcsR0FBRyxFQUFFLENBQUMsTUFBTSxDQUFDLEdBQUcsQ0FBQyxDQUFDO0FBQ3hDLE1BQU0sSUFBSSxHQUFHO0lBQ1gscUJBQXFCO0lBQ3JCLHNCQUFzQjtJQUN0QixzQkFBc0I7Q0FDdkIsQ0FBQTtBQUNELE1BQU0sQ0FBQyxNQUFNLE9BQU8sR0FBRyxHQUFHLEVBQUUsQ0FDMUIsTUFBTSxDQUFDLElBQUksQ0FBQyxDQUFDO0FBRWYsUUFBUSxDQUFDLElBQUksQ0FBQyxNQUFNLENBQUMsR0FBRyxHQUFHLENBQUMsTUFBTSxDQUFDLElBQUksQ0FBQyxDQUFDLEdBQUcsQ0FBQyxHQUFHLENBQUMsRUFBRTtJQUNqRCxNQUFNLElBQUksR0FBRyxRQUFRLENBQUMsYUFBYSxDQUFDLE1BQU0sQ0FBQyxDQUFBO0lBQzNDLElBQUksQ0FBQyxHQUFHLEdBQUcsU0FBUyxDQUFBO0lBQ3BCLElBQUksQ0FBQyxFQUFFLEdBQUcsT0FBTyxDQUFBO0lBQ2pCLElBQUksQ0FBQyxJQUFJLEdBQUcsR0FBRyxDQUFBO0lBQ2YsT0FBTyxJQUFJLENBQUE7QUFDYixDQUFDLENBQUMsQ0FBQyxDQUFBIn0=
