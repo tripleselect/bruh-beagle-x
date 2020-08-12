@@ -227,7 +227,7 @@
         "affectsGlobalScope": true
       },
       "./src/molly.ts": {
-        "version": "a302f98b1aafdf0ec9481d09d6d21973162bb21acd2e737729513096b0821620",
+        "version": "b64b3c703fd6bf77195caf6cd95fdd1219181000ddd037acb4e6737ce271b540",
         "signature": "fbb9b404817a2be8bb9fc495c6ee96b31c77abe20d96071cc6efc1bb7d892d06",
         "affectsGlobalScope": false
       },
@@ -247,7 +247,7 @@
       "strict": true,
       "esModuleInterop": true,
       "experimentalDecorators": true,
-      "watch": true,
+      "project": "./tsconfig.json",
       "configFilePath": "./tsconfig.json"
     },
     "referencedMap": {

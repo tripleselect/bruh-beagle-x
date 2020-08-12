@@ -8,6 +8,7 @@ export const getBeg = () => random(beg);
 const bark = [
   "assets/beg/nick.png",
   "assets/beg/swear.png",
+  "assets/beg/josemon.png",
   "assets/beg/bruh.webp",
 ]
 export const getBark = () =>
