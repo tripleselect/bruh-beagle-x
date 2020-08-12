@@ -1,0 +1,24 @@
+#click {
+  width: 200px;
+  height: 200px;
+  background-image: url(../assets/beg/swear.png);
+  background-size: cover;
+  background-position: center;
+}
+legend {
+  user-select: none;
+}
+#click legend::after {
+  content: ' bruhs'
+}
+body {
+  background: black;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+legend {
+  border-radius: 1em;
+  padding: 0.5em;
+  background: rgba(0, 0, 0, 0.5);
+}
