@@ -13,7 +13,7 @@ jobs:
         run: |
           npm install
           npm run build
-          echo "node_modules/" > .gitignore
+          git add --force js/
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@3.5.9
         with:
