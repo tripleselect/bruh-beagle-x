@@ -1,0 +1,29 @@
+{
+  "name": "bruh-beagle-x",
+  "version": "0.0.1",
+  "description": "bragl",
+  "main": "js/main.ts",
+  "dependencies": {
+    "typescript": "^3.9.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tripleselect/bruh-beagle-x.git"
+  },
+  "keywords": [
+    "game",
+    "dog",
+    "beagle"
+  ],
+  "author": "Jack <hello@5079.ml> (https://5079.ml)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tripleselect/bruh-beagle-x/issues"
+  },
+  "homepage": "https://github.com/tripleselect/bruh-beagle-x#readme"
+}
