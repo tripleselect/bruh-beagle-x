@@ -221,7 +221,7 @@
         "signature": "d96fa8a56871904776165ceb8e00bd56127e1a017bb2664cae76223b5f815141",
         "affectsGlobalScope": false
       },
-      "./src/bruhs.ts": {
+      "./src/lib/bruhs.ts": {
         "version": "efdb5b5687ffdea53cb89c6e3b1b0da0f6b54f52453de305afdfc637e0a03f4f",
         "signature": "694222d2bbddfe580f464b9021377adb83db0148bd0a0507b40a04fb6761314d",
         "affectsGlobalScope": true
@@ -231,9 +231,19 @@
         "signature": "fbb9b404817a2be8bb9fc495c6ee96b31c77abe20d96071cc6efc1bb7d892d06",
         "affectsGlobalScope": false
       },
+      "./src/lib/building.ts": {
+        "version": "b8f0e52dd42107fee6ada53c0db30a83271ef4cc2b53c072dd7446f8a14d51f3",
+        "signature": "978da4aec5cb5b587e7cb4b838a518638df859a4c22d0668d5f2380b242db76f",
+        "affectsGlobalScope": false
+      },
+      "./src/buildings/fat.ts": {
+        "version": "0c8c2e13e1a0a88099969e4b93e771a9140546689ebbd7044c1a48c94d12d575",
+        "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6",
+        "affectsGlobalScope": false
+      },
       "./src/main.ts": {
-        "version": "d975f3531d469a21fffc9ea778f3ebf655b6b631a6d40193665dd3ed54869c39",
-        "signature": "5fdbe4a9e401615888881b75d402183f5d5f6fff0612b5e26161e3bda5d8101c",
+        "version": "55be872a56d5f3d6b028505deda820bf135b8e67c3c797eda0e54ec5e037e952",
+        "signature": "154c09df0c53a317f3686df03fca66a07c4c237e2fdbada986cf50936e9d1b78",
         "affectsGlobalScope": false
       }
     },
@@ -247,18 +257,23 @@
       "strict": true,
       "esModuleInterop": true,
       "experimentalDecorators": true,
-      "project": "./tsconfig.json",
+      "watch": true,
       "configFilePath": "./tsconfig.json"
     },
     "referencedMap": {
+      "./src/buildings/fat.ts": [
+        "./src/lib/building.ts"
+      ],
       "./src/main.ts": [
-        "./src/bruhs.ts",
+        "./src/buildings/fat.ts",
+        "./src/lib/bruhs.ts",
         "./src/molly.ts"
       ]
     },
     "exportedModulesMap": {
       "./src/main.ts": [
-        "./src/bruhs.ts"
+        "./src/buildings/fat.ts",
+        "./src/lib/bruhs.ts"
       ]
     },
     "semanticDiagnosticsPerFile": [
@@ -306,7 +321,9 @@
       "../../../appdata/roaming/npm/node_modules/typescript/lib/lib.esnext.string.d.ts",
       "../../../appdata/roaming/npm/node_modules/typescript/lib/lib.scripthost.d.ts",
       "../../../appdata/roaming/npm/node_modules/typescript/lib/lib.webworker.importscripts.d.ts",
-      "./src/bruhs.ts",
+      "./src/buildings/fat.ts",
+      "./src/lib/bruhs.ts",
+      "./src/lib/building.ts",
       "./src/main.ts",
       "./src/molly.ts"
     ]

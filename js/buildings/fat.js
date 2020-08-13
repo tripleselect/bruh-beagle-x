@@ -1,0 +1,12 @@
+import Building from '../lib/building.js';
+const dog = document.getElementById('click');
+const fat = new Building({
+    price: 10n,
+    name: 'make bruh beagle fat',
+    desc: 'working 2012'
+});
+let per = 100;
+fat.addEventListener('buy', () => {
+    dog.style.backgroundSize = `${per *= 1.1}% 100%`;
+});
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZmF0LmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3JjL2J1aWxkaW5ncy9mYXQudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsT0FBTyxRQUFRLE1BQU0sb0JBQW9CLENBQUE7QUFDekMsTUFBTSxHQUFHLEdBQUcsUUFBUSxDQUFDLGNBQWMsQ0FBQyxPQUFPLENBQXlCLENBQUE7QUFDcEUsTUFBTSxHQUFHLEdBQUcsSUFBSSxRQUFRLENBQUM7SUFDdkIsS0FBSyxFQUFFLEdBQUc7SUFDVixJQUFJLEVBQUUsc0JBQXNCO0lBQzVCLElBQUksRUFBRSxjQUFjO0NBQ3JCLENBQUMsQ0FBQTtBQUNGLElBQUksR0FBRyxHQUFHLEdBQUcsQ0FBQTtBQUNiLEdBQUcsQ0FBQyxnQkFBZ0IsQ0FBQyxLQUFLLEVBQUUsR0FBRyxFQUFFO0lBQy9CLEdBQUcsQ0FBQyxLQUFLLENBQUMsY0FBYyxHQUFHLEdBQUcsR0FBRyxJQUFJLEdBQUcsUUFBUSxDQUFBO0FBQ2xELENBQUMsQ0FBQyxDQUFBIn0=

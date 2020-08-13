@@ -1,16 +1,23 @@
 #click {
-  width: 200px;
-  height: 200px;
   background-image: url(../assets/beg/swear.png);
+}
+
+fieldset {
+  max-width: 400px;
+  overflow: auto;
+  height: 400px;
   background-size: cover;
   background-position: center;
 }
+
 legend {
   user-select: none;
 }
-#click legend::after {
+
+#click legend::after, article button::after {
   content: ' bruhs'
 }
+
 body {
   background: black;
   color: white;
@@ -21,4 +28,8 @@ legend {
   border-radius: 1em;
   padding: 0.5em;
   background: rgba(0, 0, 0, 0.5);
+}
+
+article button::before {
+  content: 'Buy for '
 }

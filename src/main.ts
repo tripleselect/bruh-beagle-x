@@ -1,4 +1,4 @@
-import "./bruhs.js"; // setup bruh count
+import "./lib/bruhs.js"; // setup bruh count
 import { getBeg, getBark } from "./molly.js";
 
 const target = document.getElementById("click")! as HTMLFieldSetElement;
@@ -13,3 +13,7 @@ target.addEventListener("click", () => {
     target.style.backgroundImage = `url("${getBeg()}")`;
   });
 });
+
+
+// Load buildings
+import './buildings/fat.js'
