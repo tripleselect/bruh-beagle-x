@@ -1,5 +1,6 @@
 #click {
   background-image: url(../assets/beg/swear.png);
+  touch-action: manipulation;
 }
 
 fieldset {
