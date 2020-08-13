@@ -8,6 +8,7 @@ fieldset {
   height: 400px;
   width: 100%;
   display: inline-block;
+  border-radius: 1em;
   background-size: cover;
   background-position: center;
 }
